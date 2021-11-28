@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+body
+{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lobster', sans-serif;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url("background1.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  }
+.center
+{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+h1
+{
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 52px;
+}
+h1 span
+{
+  font-size: 48px;
+  line-height: .8em;
+}
+#clock
+{
+  display: flex;
+  width: 570px;
+  margin: 0 auto;
+}
+#clock div
+{
+  position: relative;
+  width: 100px;
+  height: 9vh;
+  padding: 25px;
+  margin: 0 5px;
+  background: #262626;
+  color: #fff;
+  border: 9px solid #fc035e;
+}
+#clock div:last-child
+{
+  background: #e91e63;
+}
+#clock div:before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(255,255,255,.2);
+}
+#clock div span
+{
+  display: block;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: bottom 1s, left 1s;
+}
+#clock div:hover span
+{
+  bottom: 40px;
+  left: 45%;
+}
+#clock div span:nth-child(1)
+{
+  font-size: 48px;
+  font-weight: 800;
+}
+#clock div span:nth-child(2)
+{
+  font-size: 18px;
+  font-weight: 800;
+}
+
+
